@@ -11,4 +11,5 @@ class Book(models.Model):
         return f'{self.title} - {self.rating}'
 
 
+# python manage.py shell_plus --print-sql
 # from book_app.models import Book
