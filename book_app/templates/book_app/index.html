@@ -1,0 +1,14 @@
+{% extends 'book_app/base.html' %}
+
+{% block title %}
+  Все книги
+{% endblock %}
+
+{% block content %}
+  <h2>Список всех книг</h2>
+  <ul>
+    {% for book in books %}
+      <li>{{ book.title }} - {{ book.author|default:'Автор не известен' }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
